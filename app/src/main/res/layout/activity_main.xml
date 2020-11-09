@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linear"
+            android:orientation="horizontal"
+            android:background="@color/bg"
+    >
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:id="@+id/homeLinear"
+                      android:gravity="bottom|center_horizontal"
+                      android:orientation="vertical">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp"
+                       android:src="@drawable/home_selectedxml"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textColor="@drawable/home_text"
+                      android:text="主页" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:id="@+id/textLinear"
+                      android:gravity="bottom|center_horizontal"
+                      android:orientation="vertical">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp"
+                       android:src="@drawable/text_selectedxml" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textColor="@drawable/home_text"
+                      android:text="动态" />
+        </LinearLayout>
+
+        <ImageView android:layout_width="80dp" android:layout_height="80dp"
+                   android:src="@drawable/camera_selected" />
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:id="@+id/talkLinear"
+                      android:gravity="bottom|center_horizontal"
+                      android:orientation="vertical">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp"
+                       android:src="@drawable/talk_selectedxml" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textColor="@drawable/home_text"
+                      android:text="私信" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:id="@+id/myLinear"
+                      android:gravity="bottom|center_horizontal"
+                      android:orientation="vertical">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp"
+                       android:src="@drawable/my_selectedxml" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textColor="@drawable/home_text"
+                      android:text="我的" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                 android:id="@+id/frame"
+                 android:layout_above="@id/linear" ></FrameLayout>
+
+</RelativeLayout>
